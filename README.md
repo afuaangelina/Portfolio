@@ -5,7 +5,7 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <h1>Angelina Asumaning</h1><img src="<img />
+        <h1>Angelina Asumaning</h1><img src="" alt="Picture of me">
         <h2>About me</h2>
         <p>Hi, my name is Angelina Asumaning and I'm 19 years old. I was born in Germany and currently live in Germany, but I grew up in England. I completed my university entrance qualification in 2025.</p>
         <p>I am currently learning web development and although I am still a beginner I am very motivated to learn more.</p>
