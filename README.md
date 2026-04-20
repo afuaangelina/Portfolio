@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+         <meta charset="utf-8">
         <title>Portfolio</title>
-        <meta charset="utf-8">
     </head>
     <body>
-        <h1>Angelina Asumaning</h1><img src="" alt="Picture of me">
+        <nav>
+            <a href="README.md">Home</a>
+            <a href="Projects.html">Projects</a>
+        </nav>
+        <br>
+        <h1>Angelina Asumaning</h1>
+        <!--image will be added soon-->
+        <img alt="Picture of me coming soon">
         <h2>About me</h2>
         <p>Hi, my name is Angelina Asumaning and I'm 19 years old. I was born in Germany and currently live in Germany, but I grew up in England. I completed my university entrance qualification in 2025.</p>
-        <p>I am currently learning web development and although I am still a beginner I am very motivated to learn more.</p>
-        <p>My goal is to become a Fachinformatikerin.</p>
-    </body>
-    <footer>
+        <p>I am currently learning web development and although I am still a beginner I am very motivated to learn more. My goal is to become a Fachinformatikerin.</p>
+        <p>These are the skills that i am currently learning:</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <h2>My Strengths</h2>
+        <ul>
+            <li>Motivated</li>
+            <li>Willing to learn</li>
+            <li>Interested in Technology</li>
+        </ul>
+        <footer>
         <h2>Contact me</h2>
-        <p><address>Email:<a href="mailto:afuaangelina5@gmail.com">afuaangelina5@gmail.com</a></address></p>
+        <p>Email: <a href="mailto:afuaangelina5@gmail.com">afuaangelina5@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/afuaangelina">My Profile</a></p>
     </footer>
-</html>
+    </body>
+   </html>
