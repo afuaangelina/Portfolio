@@ -160,3 +160,22 @@ footer {
     padding: 20px;
     background-color: #ece6df;
 }
+
+/* ---------- DARK MODE ---------- */
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.dark-mode nav {
+    background-color: #242424;
+}
+
+.dark-mode section {
+    background-color: #2f2f2f;
+}
+
+.dark-mode a {
+    color: #8ab4f8;
+}
