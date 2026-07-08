@@ -161,24 +161,6 @@ footer {
     background-color: #ece6df;
 }
 
-/* ---------- DARK MODE ---------- */
-
-.dark-mode {
-    background-color: #1a1a1a;
-    color: white;
-}
-
-.dark-mode nav {
-    background-color: #242424;
-}
-
-.dark-mode section {
-    background-color: #2f2f2f;
-}
-
-.dark-mode a {
-    color: #8ab4f8;
-}
 /* ---------- SKILL CARDS ---------- */
 
 .skill-card{
@@ -192,5 +174,294 @@ margin:20px 0;
 border-radius:12px;
 
 box-shadow:0 4px 10px rgba(0,0,0,.1);
+
+}
+/* ================================================= */
+/*                     DARK MODE                      */
+/* ================================================= */
+
+.dark-mode {
+    background-color: #262322;
+    color: #f5f1ec;
+}
+
+/* Smooth transitions */
+
+body,
+nav,
+footer,
+ul,
+table,
+th,
+td,
+textarea,
+button,
+.skill-card,
+.dropdown-content,
+main,
+section,
+h1,
+h2,
+h3,
+p,
+li,
+a,
+img {
+    transition:
+        background-color .35s ease,
+        color .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+/* ========================= */
+/* Navigation */
+/* ========================= */
+
+.dark-mode nav{
+    background:#3a3534;
+}
+
+.dark-mode nav a{
+    color:#f5f1ec;
+}
+
+.dark-mode nav a:hover{
+    color:#d7a7c3;
+}
+
+/* ========================= */
+/* Theme Button */
+/* ========================= */
+
+#theme-toggle{
+
+    margin-left:15px;
+    margin-top:0;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    border:2px solid #8b5e83;
+
+    background:transparent;
+
+    color:#2c2c2c;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+
+}
+
+#theme-toggle:hover{
+
+    background:#8b5e83;
+
+    color:white;
+
+}
+
+.dark-mode #theme-toggle{
+
+    color:#f5f1ec;
+
+    border-color:#d7a7c3;
+
+}
+
+.dark-mode #theme-toggle:hover{
+
+    background:#d7a7c3;
+
+    color:#262322;
+
+}
+
+/* ========================= */
+/* Headings */
+/* ========================= */
+
+.dark-mode h1{
+
+    color:#ffffff;
+
+}
+
+.dark-mode h2{
+
+    color:#f0dce8;
+
+    border-bottom:2px solid #5f5653;
+
+}
+
+.dark-mode h3{
+
+    color:#ffffff;
+
+}
+
+/* ========================= */
+/* Paragraphs */
+/* ========================= */
+
+.dark-mode p,
+.dark-mode li{
+
+    color:#ece7e2;
+
+}
+
+/* ========================= */
+/* Lists */
+/* ========================= */
+
+.dark-mode ul{
+
+    background:#312d2c;
+
+    color:#ece7e2;
+
+}
+
+/* ========================= */
+/* Tables */
+/* ========================= */
+
+.dark-mode table{
+
+    background:#312d2c;
+
+    color:#ece7e2;
+
+}
+
+.dark-mode th{
+
+    background:#544c49;
+
+    color:white;
+
+}
+
+.dark-mode td{
+
+    border:1px solid #5f5653;
+
+}
+
+/* ========================= */
+/* Dropdown */
+/* ========================= */
+
+.dark-mode .dropdown-content{
+
+    background:#312d2c;
+
+}
+
+.dark-mode .dropdown-content a{
+
+    color:#f5f1ec;
+
+}
+
+.dark-mode .dropdown-content a:hover{
+
+    background:#494341;
+
+}
+
+/* ========================= */
+/* Skill Cards */
+/* ========================= */
+
+.dark-mode .skill-card{
+
+    background:#312d2c;
+
+    color:#ece7e2;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.35);
+
+}
+
+/* ========================= */
+/* Forms */
+/* ========================= */
+
+.dark-mode textarea{
+
+    background:#312d2c;
+
+    color:#f5f1ec;
+
+    border:1px solid #5f5653;
+
+}
+
+.dark-mode textarea::placeholder{
+
+    color:#b9b1ab;
+
+}
+
+/* ========================= */
+/* Buttons */
+/* ========================= */
+
+.dark-mode button{
+
+    background:#8b5e83;
+
+    color:white;
+
+}
+
+.dark-mode button:hover{
+
+    background:#a26e98;
+
+}
+
+/* ========================= */
+/* Images */
+/* ========================= */
+
+.dark-mode img{
+
+    box-shadow:0 10px 25px rgba(0,0,0,.45);
+
+}
+
+/* ========================= */
+/* Footer */
+/* ========================= */
+
+.dark-mode footer{
+
+    background:#3a3534;
+
+    color:#ece7e2;
+
+}
+
+/* ========================= */
+/* Links */
+/* ========================= */
+
+.dark-mode a{
+
+    color:#d7a7c3;
+
+}
+
+.dark-mode a:hover{
+
+    color:#edd3e3;
 
 }
