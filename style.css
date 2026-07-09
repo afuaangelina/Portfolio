@@ -10,11 +10,43 @@ body {
 
 /* ===== HEADER + NAVIGATION ===== */
 
-nav {
-    background-color: #d8cfc4;
-    padding: 15px 20px;
-    position: sticky;
-    top: 0;
+nav{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:#d8cfc4;
+
+padding:15px 30px;
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+
+}
+.nav-left{
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+}
+
+.nav-right{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
 }
 
 nav a {
@@ -168,9 +200,9 @@ display:flex;
 
 align-items:center;
 
-gap:10px;
+gap:8px;
 
-margin-left:20px;
+margin:0;
 
 font-weight:bold;
 
@@ -431,8 +463,7 @@ img {
 
 #theme-toggle{
 
-    margin-left:15px;
-    margin-top:0;
+    margin:0;
 
     padding:8px 16px;
 
