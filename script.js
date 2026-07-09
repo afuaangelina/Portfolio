@@ -1,29 +1,46 @@
 // Get the dark mode button
 const button = document.getElementById("theme-toggle");
 
-// Check if the user previously chose dark mode
+const language = button.dataset.language;
+
+const text = {
+    en: {
+        dark: "🌙 Dark Mode",
+        light: "☀️ Light Mode"
+    },
+
+    de: {
+        dark: "🌙 Dunkelmodus",
+        light: "☀️ Lichtmodus"
+    }
+};
+
+// Check saved theme
 if (localStorage.getItem("theme") === "dark") {
+
     document.body.classList.add("dark-mode");
-    button.textContent = "☀️ Light Mode";
+
+    button.textContent = text[language].light;
+
 }
 
-// When the button is clicked
 button.addEventListener("click", function () {
 
     document.body.classList.toggle("dark-mode");
 
-    // Is dark mode currently enabled?
     if (document.body.classList.contains("dark-mode")) {
 
         localStorage.setItem("theme", "dark");
 
-        button.textContent = "☀️ Light Mode";
+        button.textContent = text[language].light;
 
-    } else {
+    }
+
+    else {
 
         localStorage.setItem("theme", "light");
 
-        button.textContent = "🌙 Dark Mode";
+        button.textContent = text[language].dark;
 
     }
 
