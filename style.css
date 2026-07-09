@@ -176,6 +176,85 @@ border-radius:12px;
 box-shadow:0 4px 10px rgba(0,0,0,.1);
 
 }
+/* ========================= */
+/* Timeline */
+/* ========================= */
+
+#timeline{
+
+margin-top:60px;
+
+}
+
+.timeline-item{
+
+background:white;
+
+padding:25px;
+
+margin:35px 0;
+
+border-left:6px solid #8b5e83;
+
+border-radius:12px;
+
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.timeline-item:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.timeline-item h3{
+
+margin-top:0;
+
+color:#8b5e83;
+
+}
+
+.timeline-item h4{
+
+margin-bottom:5px;
+
+margin-top:18px;
+
+color:#5b4b49;
+
+}
+
+.timeline-item p{
+
+margin-top:0;
+
+}
+
+.dark-mode .timeline-item{
+
+background:#312d2c;
+
+border-left-color:#c89ab7;
+
+}
+
+.dark-mode .timeline-item h3{
+
+color:#f0dce8;
+
+}
+
+.dark-mode .timeline-item h4{
+
+color:#d7a7c3;
+
+}
 /* ================================================= */
 /*                     DARK MODE                      */
 /* ================================================= */
