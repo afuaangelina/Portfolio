@@ -160,7 +160,123 @@ footer {
     padding: 20px;
     background-color: #ece6df;
 }
+/* ---------- Language Toggle ---------- */
 
+.language-toggle{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+margin-left:20px;
+
+font-weight:bold;
+
+}
+
+.language-toggle span{
+
+font-size:15px;
+
+}
+
+/* Switch */
+
+.switch{
+
+position:relative;
+
+display:inline-block;
+
+width:50px;
+
+height:26px;
+
+}
+
+.switch input{
+
+opacity:0;
+
+width:0;
+
+height:0;
+
+}
+
+.slider{
+
+position:absolute;
+
+cursor:pointer;
+
+top:0;
+
+left:0;
+
+right:0;
+
+bottom:0;
+
+background:#d8cfc4;
+
+border-radius:30px;
+
+transition:.3s;
+
+}
+
+.slider::before{
+
+content:"";
+
+position:absolute;
+
+height:20px;
+
+width:20px;
+
+left:3px;
+
+bottom:3px;
+
+background:white;
+
+border-radius:50%;
+
+transition:.3s;
+
+box-shadow:0 2px 6px rgba(0,0,0,.2);
+
+}
+
+.switch input:checked + .slider{
+
+background:#8b5e83;
+
+}
+
+.switch input:checked + .slider::before{
+
+transform:translateX(24px);
+
+}
+
+/* Dark Mode */
+
+.dark-mode .slider{
+
+background:#555;
+
+}
+
+.dark-mode .switch input:checked + .slider{
+
+background:#c89ab7;
+
+}
 /* ---------- SKILL CARDS ---------- */
 
 .skill-card{
