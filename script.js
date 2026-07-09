@@ -4,15 +4,19 @@ const button = document.getElementById("theme-toggle");
 const language = button.dataset.language;
 
 const text = {
+
     en: {
         dark: "🌙 Dark Mode",
-        light: "☀️ Light Mode"
+        light: "☀️ Light Mode",
+        feedback: "✅ Thank you! Your feedback has been received."
     },
 
     de: {
         dark: "🌙 Dunkelmodus",
-        light: "☀️ Lichtmodus"
+        light: "☀️ Lichtmodus",
+        feedback: "✅ Vielen Dank! Dein Feedback wurde erfolgreich übermittelt."
     }
+
 };
 
 // Check saved theme
@@ -45,3 +49,32 @@ button.addEventListener("click", function () {
     }
 
 });
+/* ===========================
+   Feedback Form
+=========================== */
+
+const form = document.getElementById("feedback-form");
+
+if(form){
+
+form.addEventListener("submit", function(event){
+
+event.preventDefault();
+
+const message = document.getElementById("success-message");
+
+message.textContent = text[language].feedback;
+
+message.classList.add("show");
+
+form.reset();
+
+setTimeout(function(){
+
+message.classList.remove("show");
+
+},4000);
+
+});
+
+}
