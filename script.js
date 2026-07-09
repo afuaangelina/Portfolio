@@ -55,26 +55,68 @@ button.addEventListener("click", function () {
 
 const form = document.getElementById("feedback-form");
 
-if(form){
+if (form) {
 
-form.addEventListener("submit", function(event){
+    form.addEventListener("submit", async function (event) {
 
-event.preventDefault();
+        event.preventDefault();
 
-const message = document.getElementById("success-message");
+        const message = document.getElementById("success-message");
 
-message.textContent = text[language].feedback;
+        const formData = new FormData(form);
 
-message.classList.add("show");
+        try {
 
-form.reset();
+            const response = await fetch(form.action, {
 
-setTimeout(function(){
+                method: form.method,
 
-message.classList.remove("show");
+                body: formData,
 
-},4000);
+                headers: {
+                    Accept: "application/json"
+                }
 
-});
+            });
+
+            if (response.ok) {
+
+                message.textContent = text[language].feedback;
+
+                message.classList.add("show");
+
+                form.reset();
+
+            } else {
+
+                message.textContent =
+                    language === "de"
+                    ? "❌ Beim Senden ist ein Fehler aufgetreten."
+                    : "❌ Something went wrong.";
+
+                message.classList.add("show");
+
+            }
+
+        }
+
+        catch (error) {
+
+            message.textContent =
+                language === "de"
+                ? "❌ Keine Verbindung möglich."
+                : "❌ Could not connect.";
+
+            message.classList.add("show");
+
+        }
+
+        setTimeout(function () {
+
+            message.classList.remove("show");
+
+        }, 4000);
+
+    });
 
 }
