@@ -675,6 +675,33 @@ img {
     color:#ece7e2;
 
 }
+/* ---------- Feedback Success Message ---------- */
+
+#success-message{
+
+margin-top:15px;
+
+font-weight:bold;
+
+color:#2e7d32;
+
+opacity:0;
+
+transition:opacity .3s ease;
+
+}
+
+#success-message.show{
+
+opacity:1;
+
+}
+
+.dark-mode #success-message{
+
+color:#81c784;
+
+}
 
 /* ========================= */
 /* Links */
